@@ -1,8 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/OOP.iml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/workspace.xml
-.idea/vcs.xml
+.idea/
+.idea/dictionaries
 venv/
