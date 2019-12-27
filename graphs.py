@@ -8,6 +8,7 @@ def main():
     window.getMouse()
 
 
+
 def draw_background(window):
     earth = gr.Rectangle(
         gr.Point(0, window.height // 2),
