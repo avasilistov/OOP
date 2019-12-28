@@ -15,23 +15,14 @@ def is_braces_sequence_correct(seq: str) -> bool:
     >>> is_braces_sequence_correct("}]]()")
     False
     """
-    correspondent = dict(zip("([{", ")]}"))
-    stack = []
-    for brace in seq:
-        if brace in "({[":
-            stack.append(brace)
-            continue
-        elif brace in ")}]":
-            if stack == []:
-                return False
-            left = stack.pop()
-            if correspondent[left] != brace:
-                return False
 
-    return stack == []
+    previous=''
+    while seq != previous: previous, seq = seq, seq.replace('[]', '').replace('{}', '').replace('()', '')
+    return not seq
 
 
 if __name__ == '__main__':
     import doctest
 
-    doctest.testmod()
+    # doctest.testmod()
+is_braces_sequence_correct("(){}[{}]")
