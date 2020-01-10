@@ -24,5 +24,5 @@ def is_braces_sequence_correct(seq: str) -> bool:
 if __name__ == '__main__':
     import doctest
 
-    # doctest.testmod()
+    doctest.testmod()
 is_braces_sequence_correct("(){}[{}]")
